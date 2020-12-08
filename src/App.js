@@ -210,33 +210,15 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Numero de Acessos</td><td>{est.n_acessos}</td>
-            </tr>
-            <tr>
-              <td>Numero de Acertos</td><td>{est.n_acertos}</td>
-            </tr>
-            <tr>
-              <td>Numero de Faltas</td><td>{est.n_faltas}</td>
-            </tr>
-            <tr>
-              <td>Numero de Leituras</td><td>{est.n_leituras}</td>
-            </tr>
-            <tr>
-              <td>Numero de Escritas</td><td>{est.n_escritas}</td>
-            </tr>
-            <tr>
-              <td>Numero de Acertos na Leitura</td><td>{est.n_acertos_leitura}</td>
-            </tr>
-            <tr>
-              <td>Numero de Acertos na Escrita</td><td>{est.n_acertos_escrita}</td>
-            </tr>
-            <tr>
-              <td>Numero de Faltas na Leitura</td><td>{est.n_faltas_leitura}</td>
-            </tr>
-            <tr>
-              <td>Numero de Faltas na Escrita</td><td>{est.n_faltas_escrita}</td>
-            </tr>
+            <tr><td>Numero de Acessos</td><td>{est.n_acessos}</td></tr>
+            <tr><td>Numero de Acertos</td><td>{est.n_acertos}</td></tr>
+            <tr><td>Numero de Faltas</td><td>{est.n_faltas}</td></tr>
+            <tr><td>Numero de Leituras</td><td>{est.n_leituras}</td></tr>
+            <tr><td>Numero de Escritas</td><td>{est.n_escritas}</td></tr>
+            <tr><td>Numero de Acertos na Leitura</td><td>{est.n_acertos_leitura}</td></tr>
+            <tr><td>Numero de Acertos na Escrita</td><td>{est.n_acertos_escrita}</td></tr>
+            <tr><td>Numero de Faltas na Leitura</td><td>{est.n_faltas_leitura}</td></tr>
+            <tr><td>Numero de Faltas na Escrita</td><td>{est.n_faltas_escrita}</td></tr>
           </tbody>
         </table>
       </div>
