@@ -1,7 +1,7 @@
 # ca_cache_simulator
 Cache simulator
 
-Edilson Rohden e Gabriel Techio Pansera:
+Edilson Rohden:
 
 	Mapeamento: Direto
 
@@ -9,7 +9,7 @@ Edilson Rohden e Gabriel Techio Pansera:
 
 	Escrita: Write - Through
 
-# Para rodar é preciso ter nodejs instalado
+## Para rodar é preciso ter nodejs instalado
 
 ### sudo apt install nodejs
 
