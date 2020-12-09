@@ -8,7 +8,7 @@ function App() {
   const [value, setValue] = useState("")
   const [cache, setCache] = useState([])
   const [ram, setRam] = useState([])
-  const [est, setEst] = useState({
+  const [est] = useState({
     n_acessos: 0,
     n_acertos: 0,
     n_faltas: 0,

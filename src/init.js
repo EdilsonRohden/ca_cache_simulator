@@ -1,4 +1,4 @@
-export default (cache, ram, est) => {
+const init  = (cache, ram, est) => {
     if(cache?.length !== 16){
         for (let i = 0; i < 16; i++) {
             cache.push({
@@ -23,3 +23,5 @@ export default (cache, ram, est) => {
         }
     }
 }
+
+export default init
