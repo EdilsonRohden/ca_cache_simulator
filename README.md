@@ -11,6 +11,8 @@ Edilson Rohden e Gabriel Techio Pansera:
 
 # Para rodar é preciso ter nodejs instalado
 
+### sudo apt install nodejs
+
 ### npm start
 
 
