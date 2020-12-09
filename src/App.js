@@ -137,7 +137,7 @@ function App() {
   
   function getQuadro(address) {
     const decimalAddress = getDecimalAddress(address)
-    const quadroDestino = decimalAddress % cache.length
+    const quadroDestino = parseInt(decimalAddress / cache.length) % cache.length
     return cache[quadroDestino]
   }
   
@@ -202,9 +202,12 @@ function App() {
         <input placeholder="Valor" 
           type="text" value={value} onChange={(event)=>{setValue(event.target.value)}}></input>
         <button onClick={()=> {
+          if(address.length !== 11) return setAddress("");
+          if(value.length !== 1) return setValue("");
           write(address, value)
         }}>Write</button>
         <button onClick={()=> {
+          if(address.length !== 11) return setAddress("");
           setValue(read(address))
         }}>read</button>
       </div>
