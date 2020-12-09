@@ -22,7 +22,4 @@ export default (cache, ram, est) => {
             n_faltas_escrita: 0
         }
     }
-    console.log(cache)
-    console.log(ram)
-    console.log(est)
 }

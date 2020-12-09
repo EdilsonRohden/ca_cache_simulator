@@ -23,46 +23,26 @@ function App() {
   init(cache, ram, est)
   
   function read(address){
-    console.log("Before Reading")
-    console.log(cache)
-    console.log(ram)
-    console.log(est)
     const result = getCellFromCache(address)
     setCache([...cache])
     setRam([...ram])
-    console.log("After Reading")
-    console.log(cache)
-    console.log(ram)
-    console.log(est)
     return result
   }
   
   
   function write(address, value){
-    console.log("Before Writting")
-    console.log(cache)
-    console.log(ram)
-    console.log(est)
     writeCellToCache(address, value)
     setCache([...cache])
     setRam([...ram])
-    console.log("After Writting")
-    console.log(cache)
-    console.log(ram)
-    console.log(est)
   }
   
   function getCellFromCache(address) {
-    console.log("getting from cache")
     const quadro = getQuadro(address)
-  
     if(quadro.tag === getTag(address)){
-      console.log("hit")
       hitOnRead()
       const cell = getCellDecimalPosition(address)
       return quadro.cells[cell]
     }
-    console.log("miss")
     missOnRead()
     const block =  getBlockFromRAM(address);
     writeBlockToCache(address, block)
@@ -70,17 +50,15 @@ function App() {
   }
   
   function writeCellToCache(address, value){
-    console.log("writting to cache")
     const quadro = getQuadro(address)
     if(quadro.tag === getTag(address)){
-      console.log("hit")
       hitOnWrite()
       const cell = getCellDecimalPosition(address)
       quadro.cells[cell] = value
       writeBlockToRAM(address, quadro.cells)
       return
     }
-    console.log("miss")
+    
     missOnWrite()
     getFromRamAndWrite();
     function getFromRamAndWrite() {
@@ -94,7 +72,7 @@ function App() {
   }
   
   function writeBlockToCache(address, block){
-    console.log("writting to cache")
+    
     const quadro = getQuadro(address)
     quadro.cells = block
     quadro.tag = getTag(address)
